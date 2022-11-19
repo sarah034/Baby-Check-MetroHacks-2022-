@@ -7,12 +7,68 @@
     <title>Document</title>
 </head>
 <style>
+    .login {
+    border: none;
+    background-color: transparent;
+    width: 240px;
+    height: 50px;
+    padding: 3px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    position: fixed;
+    left: 73px;
+    top: 538px;
+    }
+    .register {
+    border: none;
+    background-color: transparent;
+    width: 100px;
+    height: 10px;
+    padding: 3px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    position: fixed;
+    left: 230px;
+    top: 620px;
+    }
     body {
         background-image: url('Homepage.png');
         background-repeat: no-repeat;
     }
+    input {
+    padding: 15px 10px;
+    font-size: 14px;
+    width: 330px;
+    }
+    .username {
+    position: fixed;
+    left: 20px;
+    top: 325px;
+    }
+
+    .password {
+    position: fixed;
+    left: 20px;
+    top: 410px;
+    }
 </style>
 <body>
+<form action = "signup page.html">
+    <button type = "submit" class = "login">  </button>
+</form>  
+<form action = "signup page.html">
+    <button type = "submit" class = "register">  </button>
+</form>   
+<form action="/action_page.php" class = "username">
+    <input type="text" id="username" name="username">
+</form>
     
+<form action="/action_page.php" class = "password">
+    <input type="password" id="password" name="password">
+</form>
 </body>
 </html>
