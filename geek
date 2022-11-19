@@ -1,0 +1,18 @@
+import cv2
+import matplotlib.pyplot as plt
+
+
+
+file ='geeks14.png'
+
+image = cv2.imread(file)
+image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+w, h,d = image.shape
+x= int(w/3)
+y = int(h/3)
+box_image = cv2.rectangle(image,(x,y), (x+x,y+y),(255,0,0),2)
+#cv2.putText()
+plt.figure()
+plt.axis('off')
+plt.imshow(box_image)
